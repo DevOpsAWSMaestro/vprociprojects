@@ -16,9 +16,9 @@ pipeline {
         NEXUS_LOGIN = 'nexuslogin'
     }
     stages {
-        stage("Build"){
+        stage('Checkstyle Analysis'){
             steps {
-                sh 'mvn -s settings.xml -DskipTests install'
+                sh 'mvn checkstyle:checkstyle'
             }
         }
     }
