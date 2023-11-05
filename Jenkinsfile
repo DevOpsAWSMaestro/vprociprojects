@@ -68,14 +68,6 @@ pipeline {
                     waitForQualityGate abortPipeline: true
                 }
             }
-        }
-
-        post {
-            success {
-                echo "Success Quality gates"
-            }
-        }
-
-        
+        } 
     }
 }
