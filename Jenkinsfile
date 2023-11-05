@@ -7,7 +7,7 @@ pipeline {
     tools {
         maven "MAVEN3"
         jdk "OracleJDK8"
-    }s
+    }
     environment {
         SNAP_REPO = 'vprofile-snapshot'
 		NEXUS_USER = 'admin'
