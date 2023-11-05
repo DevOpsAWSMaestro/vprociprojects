@@ -70,6 +70,12 @@ pipeline {
             }
         }
 
+        post {
+            success {
+                echo "Success Quality gates"
+            }
+        }
+
         
     }
 }
