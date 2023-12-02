@@ -14,7 +14,18 @@ pipeline {
 		NEXUSPORT = '8081'
 		NEXUS_GRP_REPO = 'vpro-maven-group'
         NEXUS_LOGIN = 'nexuslogin'
+<<<<<<< HEAD
    
+=======
+        SONARSERVER = 'sonarserver'
+        SONARSCANNER = 'sonarscanner'
+        registryCredential = 'ecr:us-east-1:awscreds'
+        appRegistry = '828914305201.dkr.ecr.us-east-1.amazonaws.com/vprofileappimg'
+        vprofileRegistry = 'https://828914305201.dkr.ecr.us-east-1.amazonaws.com'
+        cluster = 'vprostaging1'
+        service = 'vproappstagesvc1'
+        
+>>>>>>> cicd-jenkins
     }
     stages {
         stage("Build"){
